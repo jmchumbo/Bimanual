@@ -11,9 +11,7 @@ from sklearn.mixture import GaussianMixture
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-print(os.path.abspath(__file__))
+sys.path.insert(0, '~/Bimanual/graspd/dflex/')
 
 print("Github updated")
 
