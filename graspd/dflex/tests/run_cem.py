@@ -9,9 +9,12 @@ from pyquaternion import Quaternion
 from sklearn.mixture import GaussianMixture
 import os
 
-#import sys
+import sys
+
+print(sys.models)
+exit()
 print("What do we need? \n")
-#print('\n'.join(sys.path)) # does this show the files and folders you need?
+print('\n'.join(sys.path)) # does this show the files and folders you need?
 
 import hydra
 from hydra.utils import to_absolute_path
@@ -19,7 +22,7 @@ from hydra.utils import to_absolute_path
 print("\n Append: \n")
 sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
 
-exit()
+
 
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
