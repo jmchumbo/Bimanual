@@ -19,6 +19,8 @@ print("Github updated")
 
 print("nano working")
 
+print("PAra de estar àfrente porra!!")
+
 #a
 
 from dflex import sim
