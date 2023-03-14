@@ -10,19 +10,23 @@ from sklearn.mixture import GaussianMixture
 import os
 
 import foo
+print("FOO \n")
 print(foo.__file__)  # this should show the path to the module.  Is it what you expect?
 
 
 import sys
+print("What do we need? \n")
 print('\n'.join(sys.path)) # does this show the files and folders you need?
 
 import hydra
 from hydra.utils import to_absolute_path
 
+print("\n Append: \n")
 sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
 
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+print("\n Append2: \n")
 sys.path.append('~/Bimanual/graspd/dflex/')
 
 print("Where am I? - " + os.getcwd())
