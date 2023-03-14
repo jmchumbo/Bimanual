@@ -19,6 +19,8 @@ from hydra.utils import to_absolute_path
 print("\n Append: \n")
 sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
 
+exit()
+
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 print("\n Append2: \n")
