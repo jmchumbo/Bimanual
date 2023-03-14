@@ -11,7 +11,7 @@ import os
 
 import sys
 
-print(sys.models)
+print(sys.modules)
 exit()
 print("What do we need? \n")
 print('\n'.join(sys.path)) # does this show the files and folders you need?
