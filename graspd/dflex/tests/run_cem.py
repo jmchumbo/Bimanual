@@ -9,7 +9,7 @@ from pyquaternion import Quaternion
 from sklearn.mixture import GaussianMixture
 import os
 
-import sys
+#import sys
 print("What do we need? \n")
 print('\n'.join(sys.path)) # does this show the files and folders you need?
 
