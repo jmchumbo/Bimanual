@@ -23,8 +23,8 @@ print("Where am I? - " + os.getcwd())
 
 print("nano working")
 
-import dflex as df
-from df import sim
+#import dflex as df
+from dflex import sim
 from cem import CEM
 from model import Mesh
 #from gmm import GaussianMixture
