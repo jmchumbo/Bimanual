@@ -11,7 +11,7 @@ import os
 
 #import sys
 print("What do we need? \n")
-print('\n'.join(sys.path)) # does this show the files and folders you need?
+#print('\n'.join(sys.path)) # does this show the files and folders you need?
 
 import hydra
 from hydra.utils import to_absolute_path
