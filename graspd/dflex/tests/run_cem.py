@@ -14,7 +14,6 @@ import hydra
 from hydra.utils import to_absolute_path
 
 sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
-@hydra.main(config_path="../conf/collect_grasps", config_name="config")
 
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
