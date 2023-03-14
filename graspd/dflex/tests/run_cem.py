@@ -25,7 +25,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 print("\n Append2: \n")
-sys.path.append('/home/j-chumbinho/Bimanual/graspd/dflex/')
+sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 
 print("Where am I? - " + os.getcwd())
 
