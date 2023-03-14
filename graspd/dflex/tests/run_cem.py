@@ -7,9 +7,16 @@ import mdmm
 import pyvista as pv
 from pyquaternion import Quaternion
 from sklearn.mixture import GaussianMixture
-
 import os
+
+from foo.bar import baz
+import foo
+print(foo.__file__)  # this should show the path to the module.  Is it what you expect?
+
+
 import sys
+print('\n'.join(sys.path)) # does this show the files and folders you need?
+
 import hydra
 from hydra.utils import to_absolute_path
 
@@ -17,13 +24,13 @@ sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__
 
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-#sys.path.append(0, '~/Bimanual/graspd/dflex/')
+sys.path.append('~/Bimanual/graspd/dflex/')
 
 print("Where am I? - " + os.getcwd())
 
 print("nano working")
 
-#import dflex as df
+import dflex as df
 from dflex import sim
 from cem import CEM
 from model import Mesh
