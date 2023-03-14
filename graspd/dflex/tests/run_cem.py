@@ -11,8 +11,6 @@ import os
 
 import sys
 
-print(sys.modules)
-exit()
 print("What do we need? \n")
 print('\n'.join(sys.path)) # does this show the files and folders you need?
 
@@ -31,11 +29,8 @@ sys.path.append('~/Bimanual/graspd/dflex1/')
 
 print("Where am I? - " + os.getcwd())
 
-print("nano working")
-
-import foo
-print("FOO \n")
-print(foo.__file__)  # this should show the path to the module.  Is it what you expect?
+print("2 - What do we need? \n")
+print('\n'.join(sys.path)) # does this show the files and folders you need?
 
 import dflex as df
 from dflex import sim
