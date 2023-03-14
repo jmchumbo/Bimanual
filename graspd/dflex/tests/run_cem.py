@@ -13,7 +13,7 @@ import sys
 
 sys.path.insert(0, '~/Bimanual/graspd/dflex/')
 
-print("Github updated")
+print("Where am I? - " + os.getcwd())
 
 print("nano working")
 
