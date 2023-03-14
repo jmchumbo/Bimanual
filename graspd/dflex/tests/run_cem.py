@@ -10,7 +10,6 @@ from sklearn.mixture import GaussianMixture
 import os
 
 import foo
-from foo.bar import baz
 print(foo.__file__)  # this should show the path to the module.  Is it what you expect?
 
 
