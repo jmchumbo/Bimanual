@@ -17,6 +17,7 @@ print(os.path.abspath(__file__))
 
 print("Github updated")
 
+print("nano working")
 
 #a
 
