@@ -10,8 +10,15 @@ from sklearn.mixture import GaussianMixture
 
 import os
 import sys
+import hydra
+from hydra.utils import to_absolute_path
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
+@hydra.main(config_path="../conf/collect_grasps", config_name="config")
+
+#sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+#sys.path.append(0, '~/Bimanual/graspd/dflex/')
 
 print("Where am I? - " + os.getcwd())
 
