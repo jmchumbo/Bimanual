@@ -19,12 +19,9 @@ print("Github updated")
 
 print("nano working")
 
-#a
-
-from dflex import sim
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from cem import CEM
 import dflex as df
+from df import sim
+from cem import CEM
 from model import Mesh
 #from gmm import GaussianMixture
 import test_util
