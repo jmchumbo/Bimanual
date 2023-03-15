@@ -17,20 +17,20 @@ print('\n'.join(sys.path)) # does this show the files and folders you need?
 import hydra
 from hydra.utils import to_absolute_path
 
-print("\n Append: \n")
-sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
+#print("\n Append: \n")
+#sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
 
 
 
 #sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-print("\n Append2: \n")
+print("\n Append dflex: \n")
 sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 
-print("Where am I? - " + os.getcwd())
+#print("Where am I? - " + os.getcwd())
 
-print("2 - What do we need? \n")
-print('\n'.join(sys.path)) # does this show the files and folders you need?
+#print("2 - What do we need? \n")
+#print('\n'.join(sys.path)) # does this show the files and folders you need?
 
 import dflex as df
 from dflex import sim
@@ -40,6 +40,8 @@ from model import Mesh
 import test_util
 
 df.config.no_grad = True
+
+exit()
 
 def get_Js(model,state):
     Js = []
