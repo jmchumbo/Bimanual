@@ -11,9 +11,6 @@ import os
 
 import sys
 
-print("What do we need? \n")
-print('\n'.join(sys.path)) # does this show the files and folders you need?
-
 import hydra
 from hydra.utils import to_absolute_path
 
@@ -21,6 +18,9 @@ from hydra.utils import to_absolute_path
 
 #A few tests just to check how to append the path to dflex
 """
+print("What do we need? \n")
+print('\n'.join(sys.path)) # does this show the files and folders you need?
+
 #print("\n Append: \n")
 #sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
 
@@ -36,8 +36,6 @@ from hydra.utils import to_absolute_path
 sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 
 print(torch.cuda.is_available())
-
-exit()
 
 import dflex as df
 from dflex import sim
