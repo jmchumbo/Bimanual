@@ -32,6 +32,8 @@ sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 #print("2 - What do we need? \n")
 #print('\n'.join(sys.path)) # does this show the files and folders you need?
 
+exit()
+
 import dflex as df
 from dflex import sim
 from cem import CEM
@@ -40,8 +42,6 @@ from model import Mesh
 import test_util
 
 df.config.no_grad = True
-
-exit()
 
 def get_Js(model,state):
     Js = []
