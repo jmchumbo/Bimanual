@@ -17,9 +17,22 @@ from hydra.utils import to_absolute_path
 
 
 #A few tests just to check how to append the path to dflex
-"""
+
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+granddaddir = os.path.dirname(os.path.dirname(currentdir))
+sys.path.insert(0, parentdir)
+sys.path.insert(0, granddaddir)
+
 print("What do we need? \n")
 print('\n'.join(sys.path)) # does this show the files and folders you need?
+
+"""
+#print("\n Append dflex: \n")
+#sys.path.append('/media/Data/j-chumbinho/Bimanual/graspd/dflex/')
+
+#sys.path.append('..')
 
 #print("\n Append: \n")
 #sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src'))
@@ -30,10 +43,12 @@ print('\n'.join(sys.path)) # does this show the files and folders you need?
 
 #print("2 - What do we need? \n")
 #print('\n'.join(sys.path)) # does this show the files and folders you need?
-"""
+
 
 #print("\n Append dflex: \n")
 sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
+"""
+
 
 print(torch.cuda.is_available())
 
