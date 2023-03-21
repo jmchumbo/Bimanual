@@ -49,6 +49,8 @@ print('\n'.join(sys.path)) # does this show the files and folders you need?
 sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 """
 
+CUDA_HOME = ~/cuda
+
 
 print(torch.cuda.is_available())
 
