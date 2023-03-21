@@ -49,10 +49,12 @@ print('\n'.join(sys.path)) # does this show the files and folders you need?
 sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 """
 
-CUDA_HOME = ~/cuda
-
 
 print(torch.cuda.is_available())
+
+print(os.environ.get('CUDA_PATH'))
+#CUDA_HOME = ~/cuda
+
 
 import dflex as df
 from dflex import sim
