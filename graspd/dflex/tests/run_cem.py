@@ -52,7 +52,7 @@ sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 
 print(torch.cuda.is_available())
 
-print(os.environ.get('CUDA_PATH'))
+print(os.environ.get('CUDA_HOME'))
 #CUDA_HOME = ~/cuda
 
 
