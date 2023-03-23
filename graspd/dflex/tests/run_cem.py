@@ -50,15 +50,18 @@ sys.path.append('/home/j-chumbinho/Bimanual/graspd/')
 """
 
 
+print("\n \n Is torch.cuda available??")
 print(torch.cuda.is_available())
 
+print("\n Number of gpus available")
+print(torch.cuda.device_count())
 
 print("\n \n What is CUDA_HOME path?")
 
 print(os.environ.get('CUDA_HOME'))
 #CUDA_HOME = ~/cuda
 
-print("\n \n")
+print("\n \n    ")
 
 import dflex as df
 from dflex import sim
