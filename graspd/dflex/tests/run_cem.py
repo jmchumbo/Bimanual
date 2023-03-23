@@ -2,19 +2,10 @@
 import math
 import torch
 import numpy as np
-import matplotlib.pyplot as plt
-import mdmm
-import pyvista as pv
-from pyquaternion import Quaternion
-from sklearn.mixture import GaussianMixture
+
 import os
 import inspect
 import sys
-
-import hydra
-from hydra.utils import to_absolute_path
-
-
 
 #A few tests just to check how to append the path to dflex
 
@@ -67,6 +58,19 @@ print(os.environ.get('CUDA_HOME'))
 #CUDA_HOME = ~/cuda
 
 print("\n \n    ")
+
+
+
+import matplotlib.pyplot as plt
+import mdmm
+import pyvista as pv
+from pyquaternion import Quaternion
+from sklearn.mixture import GaussianMixture
+import hydra
+from hydra.utils import to_absolute_path
+
+
+
 
 import dflex as df
 from dflex import sim
