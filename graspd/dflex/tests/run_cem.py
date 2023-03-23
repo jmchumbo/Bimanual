@@ -58,7 +58,7 @@ print(torch.cuda.device_count())
     
 
 print("\n Torch version Cuda")
-print(torch.version.cuda())
+print(torch.version.cuda)
 
 
 print("\n \n What is CUDA_HOME path?")
