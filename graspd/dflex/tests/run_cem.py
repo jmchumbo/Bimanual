@@ -55,6 +55,11 @@ print(torch.cuda.is_available())
 
 print("\n Number of gpus available")
 print(torch.cuda.device_count())
+    
+
+print("\n Torch version Cuda")
+print(torch.version.cuda())
+
 
 print("\n \n What is CUDA_HOME path?")
 
