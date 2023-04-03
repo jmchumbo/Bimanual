@@ -1775,13 +1775,13 @@ user_kernels = {}
 def func(f):
     user_funcs[f.__name__] = f
 
-    # adj = Adjoint(f)
+    adj = Adjoint(f)
     # print(adj.codegen_forward())
     # print(adj.codegen_reverse())
 
-    # set_build_env()
+    set_build_env()
 
-    # include_path = os.path.dirname(os.path.realpath(__file__))
+    include_path = os.path.dirname(os.path.realpath(__file__))
 
     # # requires PyTorch hotfix https://github.com/pytorch/pytorch/pull/33002
     test_cuda = torch.utils.cpp_extension.load_inline('test_cuda', [cpp_template], None, ["test_forward_1", "test_backward_1"], extra_include_paths=include_path, verbose=True)
