@@ -59,12 +59,6 @@ print(os.environ.get('CUDA_HOME'))
 
 print("\n \n    ")
 
-test_cuda = torch.utils.cpp_extension.load_inline('test_cuda', [cpp_template], None, ["test_forward_1", "test_backward_1"], extra_include_paths=include_path, verbose=True)
-
-help(test_cuda)
-
-exit()
-
 import matplotlib.pyplot as plt
 import mdmm
 import pyvista as pv
@@ -72,8 +66,6 @@ from pyquaternion import Quaternion
 from sklearn.mixture import GaussianMixture
 import hydra
 from hydra.utils import to_absolute_path
-
-
 
 
 import dflex as df
