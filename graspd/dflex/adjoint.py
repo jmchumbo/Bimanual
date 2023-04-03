@@ -1784,10 +1784,11 @@ def func(f):
     # include_path = os.path.dirname(os.path.realpath(__file__))
 
     # # requires PyTorch hotfix https://github.com/pytorch/pytorch/pull/33002
-    # test_cuda = torch.utils.cpp_extension.load_inline('test_cuda', [cpp_template], None, ["test_forward_1", "test_backward_1"], extra_include_paths=include_path, verbose=True)
+    test_cuda = torch.utils.cpp_extension.load_inline('test_cuda', [cpp_template], None, ["test_forward_1", "test_backward_1"], extra_include_paths=include_path, verbose=True)
 
-    # help(test_cuda)
+    help(test_cuda)
 
+    exit()
 
 def kernel(f):
 
